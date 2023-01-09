@@ -24,11 +24,13 @@ form.addEventListener("submit", (e) => {
         <div class="border">
     `;
   bookList.appendChild(bookItem);
+  localStorage.setItem("books", JSON.stringify(books));
 });
 
 // Remove books from the List
 document.addEventListener("click", (e) => {
   if (e.target.classList.contains("remove")) {
     e.target.parentElement.remove();
+    localStorage.removeItem("books", JSON.stringify(books));
   }
 });
