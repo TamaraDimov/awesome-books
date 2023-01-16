@@ -41,30 +41,3 @@ export class BookFun {
     localStorage.setItem('collections', JSON.stringify(this.collections));
   }
 }
-const books = new BookFun();
-
-window.addEventListener('load', () => {
-  books.showBook();
-});
-
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const book = { title: titleInput.value, author: authorInput.value };
-
-  if (titleInput.value !== '' && authorInput.value !== '') {
-    addBtn.disabled = false;
-    books.addBook(book);
-    titleInput.value = '';
-    authorInput.value = '';
-    books.showBook(book);
-  } else {
-    addBtn.disabled = true;
-  }
-});
-
-bookList.addEventListener('click', (e) => {
-  if (e.target.className.includes('remove-btn')) {
-    const targetEl = e.target;
-    books.removeBook(targetEl);
-  }
-});
