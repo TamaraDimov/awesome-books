@@ -45,15 +45,25 @@ bookList.addEventListener('click', (e) => {
 
 const navMenus = document.querySelectorAll('nav a');
 const contentEls = document.querySelectorAll('.contents');
-
-for (let i = 0; i < navMenus.length; i += 1) {
-  navMenus[i].addEventListener('click', () => {
+navMenus.forEach((navMenu, i) => {
+  navMenu.addEventListener('click', () => {
     contentEls.forEach((content, idx) => {
       if (idx !== i && content.className.includes('active')) {
         content.classList.remove('active');
       }
     });
-
     contentEls[i].classList.add('active');
   });
-}
+});
+
+// for (let i = 0; i < navMenus.length; i += 1) {
+//   navMenus[i].addEventListener('click', () => {
+//     contentEls.forEach((content, idx) => {
+//       if (idx !== i && content.className.includes('active')) {
+//         content.classList.remove('active');
+//       }
+//     });
+
+// contentEls[i].classList.add('active');
+//   });
+// }
