@@ -12,11 +12,11 @@ export class BookFun {
   removeBook(cur) {
     const curparent = cur.parentElement;
     const curidx = Array.from(curparent.parentElement.children).indexOf(
-      curparent
+      curparent,
     );
     curparent.remove();
     this.collections = this.collections.filter(
-      (collection, index) => index !== curidx
+      (collection, index) => index !== curidx,
     );
 
     localStorage.setItem('collections', JSON.stringify(this.collections));
