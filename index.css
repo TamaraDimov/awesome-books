@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-bar {
+  margin: 10px;
+  padding: 15px;
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+  justify-items: end;
+}
+
+.nav-bar a {
+  color: black;
+  text-decoration: none;
+  border-left: 2px solid black;
+  width: 150px;
+  font-weight: bold;
+}
+
+.nav-bar a:hover,
+.nav-bar a:active {
+  font-size: 17px;
+  color: rgb(38, 6, 127);
+}
+
+#nav-title {
+  justify-self: start;
+  border: none;
+}
+
+.clock {
+  text-align: end;
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.description {
+  padding-bottom: 50px;
+  font-style: italic;
+}
+
+body {
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1,
+h2 {
+  margin: 30px 0;
+}
+
+.black-line {
+  margin-top: 30px;
+  border-top: 2px solid black;
+  width: 50px;
+  margin-left: 46%;
+  margin-bottom: 10px;
+}
+
+.book-list {
+  margin-left: 10%;
+  width: 80%;
+  border: 2px solid black;
+}
+
+.book-list div:nth-of-type(even) {
+  background-color: #ddd;
+}
+
+.books {
+  padding: 1% 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book-info {
+  display: flex;
+}
+
+.book-rows {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-control {
+  border: 2px solid black;
+  width: 60%;
+  padding: 0.5% 1%;
+}
+
+.remove-btn,
+.add-btn {
+  border: 1px solid black;
+  box-shadow: 1px 2px;
+  margin: 0;
+  padding: 0.5% 2%;
+  cursor: pointer;
+}
+
+.add-button {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contant-info li {
+  margin-left: 35%;
+  text-align: start;
+  list-style-position: inside;
+}
+
+.contant-info {
+  margin-top: 20px;
+}
+
+footer {
+  border: 2px solid black;
+  margin: 10px;
+  text-align: start;
+  margin-top: 30px;
+}
+
+footer h3 {
+  padding: 15px;
+}
+
+.contents {
+  display: none;
+}
+
+.contents.active {
+  display: block;
+}

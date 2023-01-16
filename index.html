@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Awesome Books</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header id="nav-title">
+      <div class="header">
+        <nav class="nav-bar">
+          <a href="#" id="nav-title">Awesome Books</a>
+          <a href="#" id="navList">List</a>
+          <a href="#" id="navNew">Add New</a>
+          <a href="#" id="navContact">Contact</a>
+        </nav>
+      </div>
+      <div class="clock">
+        <span id="clock"></span>
+      </div>
+    </header>
+
+    <section class="body-content">
+      <div class="main-page contents" id="main-page">
+        <h1 id="title" class="">All Awesome Books</h1>
+        <p class="description" id="description">
+          Please click on the navigation menu for furder information
+        </p>
+      </div>
+
+      <div class="list contents active" id="list">
+        <h2 id="title" class="">All Awesome Books</h2>
+        <div class="book-list"></div>
+      </div>
+
+      <div class="add-new contents" id="form">
+        <h2 id="title" class="">Add a New Book</h2>
+        <div class="add-new-book"></div>
+        <form action="" method="">
+          <div>
+            <input
+              type="text"
+              name="titleInput"
+              id="titleInput"
+              class="form-control"
+              placeholder="Title"
+            />
+          </div>
+          <br />
+          <div>
+            <input
+              type="text"
+              name="authorInput"
+              id="authorInput"
+              class="form-control"
+              placeholder="Author"
+            />
+          </div>
+          <br />
+          <div class="add-button">
+            <button class="add-btn">Add</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="contact contents" id="contact">
+        <h2 id="title" class="">All Awesome Books</h2>
+        <p>
+          Do you have any questions or you just want to say "Hello"? You can
+          reach out to us!
+        </p>
+        <ul class="contant-info">
+          <li>Our e-mail:mail.com</li>
+          <li>Our phone number:0043586534422</li>
+          <li>Our address: Streetname 22, 84503 City, Country</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <h3>Copyright &copy; ...</h3>
+    </footer>
+    <script src="./modules/index.js" type="module"></script>
+  </body>
+</html>
